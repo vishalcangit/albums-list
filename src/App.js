@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Albums from "./components/Albums";
 
 function App() {
+  const [albums, setAlbums] = useState([]);
+
+  async function fetchAlbumsHandler() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/albums');
+    let data = await response.json();
+    setAlbums(data);
+  }
+  console.log(albums);
+
+  async function deleteAlbumHandler(id) {
+    setAlbums(
+      albums.filter((album) => {
+        return album.id !== id
+      })
+    )
+    console.log(id);
+    console.log(albums);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={fetchAlbumsHandler}>Fetch albums</button>
+      <Albums albums={albums} deleteAlbum={deleteAlbumHandler} />
     </div>
   );
 }
