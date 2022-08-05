@@ -1,27 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Albums.css'
+import Update from './Update'
 
 export default function Albums(props) {
+    const [updateBtnClicked, setUpdateBtnClicked] = useState(false);
 
-    const editBtnHandler = (id) => {
+    const updateBtnHandler = (id) => {
+        setUpdateBtnClicked(true)
         console.log(id);
+        // setUpdateBtnClicked(false)
     }
     const deleteBtnHandler = (id) => {
         console.log(id);
         props.deleteAlbum(id)
     }
 
-
     return (
-        <div>
-            <ul>
+        <div className='body'>
+            <ul className='box'>
                 {props.albums.map(album => (
-                    <li key={album.id}>
-                        <p>{album.id}</p>
-                        <p>{album.title}</p>
-                        <button onClick={() => editBtnHandler(album.id)}>Edit</button>
-                        <button onClick={() => deleteBtnHandler(album.id)}>Delete</button>
+                    <li className='list' key={album.id}>
+                        {updateBtnClicked && <Update update></Update>}
+                        <p><u>Album title</u>: <b>{album.title}</b></p>
+                        <button className='button' onClick={() => updateBtnHandler(album.id)}>UPDATE</button>
+                        <button className='button' onClick={() => deleteBtnHandler(album.id)}>Delete</button>
                     </li>
                 ))}
+
             </ul>
         </div>
     )
