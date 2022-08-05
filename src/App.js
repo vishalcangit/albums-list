@@ -1,15 +1,19 @@
 import { useState } from "react";
 import AddAlbum from "./components/AddAlbum";
 import Albums from "./components/Albums";
+import Card from './UI/Card';
+import './App.css'
 
 function App() {
   const [albums, setAlbums] = useState([]);
   const [deleteShow, setDeleteShow] = useState(false);
   const [addShow, setAddShow] = useState(false);
   const [fetchShow, setFetchShow] = useState(false);
+  const [fetched, setFetched] = useState(false);
 
   async function fetchAlbumsHandler() {
     setFetchShow(true)
+    setFetched(true)
     let response = await fetch(`https://jsonplaceholder.typicode.com/albums`);
     let data = await response.json();
     setAlbums(data);
@@ -79,8 +83,14 @@ function App() {
 
   return (
     <div>
-      <AddAlbum albums={albums} addAlbum={addAlbumHandler} ></AddAlbum>
-      <button onClick={fetchAlbumsHandler}>Fetch albums</button>
+      {!fetched ?
+        <Card>
+          <button className="fetchBtn" onClick={fetchAlbumsHandler}>Fetch albums</button>
+        </Card>
+        : <Card>
+          <AddAlbum albums={albums} addAlbum={addAlbumHandler} ></AddAlbum>
+        </Card>
+      }
       {fetchShow && <h1>Fetching albums...</h1>}
       {deleteShow && <h1>Deleting an album...</h1>}
       {addShow && <h1>Album added Successfully below....</h1>}

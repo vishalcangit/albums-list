@@ -21,7 +21,7 @@ export default function Albums(props) {
                 {props.albums.map(album => (
                     <li className='list' key={album.id}>
                         {updateBtnClicked && <Update update></Update>}
-                        <p><u>Album title</u>: <b>{album.title}</b></p>
+                        <p className='title'><u>Album title</u>: <b>{album.title}</b></p>
                         <button className='button' onClick={() => updateBtnHandler(album.id)}>UPDATE</button>
                         <button className='button' onClick={() => deleteBtnHandler(album.id)}>Delete</button>
                     </li>
