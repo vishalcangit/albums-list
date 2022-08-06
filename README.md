@@ -1,70 +1,30 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project hosted link [Click here..](https://vishalcangit.github.io/albums-list/?updates=).
 
-## Available Scripts
+## The fetch album button
+![Screenshot (6)](https://user-images.githubusercontent.com/105626822/183249128-2c290522-d81a-4ca3-961a-c0b879ed85b5.png)
 
-In the project directory, you can run:
+## After the Fetch Album button is clicked
+![Screenshot (7)](https://user-images.githubusercontent.com/105626822/183249261-bd43467e-8721-4390-9299-ef86cea2c3cd.png)
 
-### `npm start`
+## To Add a new album if the button is clicked with an empty input the input box turns red
+![Screenshot (8)](https://user-images.githubusercontent.com/105626822/183249295-2fd2987f-5553-4ca9-a05e-15a8619adf3b.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Adding an new Album with title: Vishal newly added..
+![Screenshot (9)](https://user-images.githubusercontent.com/105626822/183249429-bdbd2e6f-e2e8-4fb8-aa25-a3cc2351cf25.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Title got added below message shown
+![Screenshot (15)](https://user-images.githubusercontent.com/105626822/183249359-39f48319-99d1-4206-b8dd-55f69caf28ef.png)
 
-### `npm test`
+## Newly added album found at bottom of list
+![Screenshot (10)](https://user-images.githubusercontent.com/105626822/183249430-3e4d55eb-a3e9-4673-a799-a253afda5bd4.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deleting an album by clicking delete button it shows the msg
+![Screenshot (11)](https://user-images.githubusercontent.com/105626822/183249477-cf5a924e-55fa-44ac-a5e8-ea2f49f7f79f.png)
 
-### `npm run build`
+## When the update btn is clicked the update form is opened with the previous title which is to be updated
+![Screenshot (13)](https://user-images.githubusercontent.com/105626822/183249500-f7ed3681-60cf-4204-819d-19f678fb2314.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## When it finally updates it sends the message that the title is updated
+![Screenshot (14)](https://user-images.githubusercontent.com/105626822/183249497-f5680254-4d7c-4609-93cf-ebd1546770ba.png)
