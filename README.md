@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-###This is react skill test to fetch the albums api and call some dummy calls to POST (Add album), PUT (Update album), and DELETE (Delete album)
+### This is react skill test to fetch the albums api and call some dummy calls to POST (Add album), PUT (Update album), and DELETE (Delete album)
 
 Project hosted link [Click here..](https://vishalcangit.github.io/albums-list/?updates=).
 
